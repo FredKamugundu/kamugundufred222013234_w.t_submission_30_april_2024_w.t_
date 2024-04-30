@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Submission Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: slategray; 
+            color: #fff; /* White text */
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+            color: #333; /* Dark gray */
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: darkblue; /* White button */
+            color: white; /* Green text */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #f0f0f0; /* Light gray hover */
+        }
+    </style>
+</head>
+<body>
+
+<h2>grade Form</h2>
+
+<form action="grades.php" method="POST">
+    <label for="markid">Mark ID:</label><br>
+    <input type="text" id="markid" name="markid" required><br><br>
+
+    <label for="CATmarks_30">CAT Marks/30:</label><br>
+    <input type="number" id="CATmarks_30" name="CATmarks_30" required><br><br>
+
+    <label for="FinalExam_60">Final Exam Marks/60:</label><br>
+    <input type="number" id="FinalExam_60" name="FinalExam_60" required><br><br>
+
+    <label for="courseid">Course ID:</label><br>
+    <input type="text" id="courseid" name="courseid" required><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+ body {
+            font-family: Arial, sans-serif;
+            background-color: darkblue; /* Dark blue background */
+            color: #fff; /* White text */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 960px; /* Set maximum width */
+            margin: 0 auto; /* Center the container */
+        }
+
+        h1, h2, h3 {
+            color: #fff; /* White text */
+        }
+
+        .navbar {
+            background-color: #fff; /* White navbar background */
+            padding: 20px 0; /* Add padding to the navbar */
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            color: #000; /* Black navbar text */
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar ul {
+            display: flex; /* Display the list items horizontally */
+            list-style-type: none; /* Remove bullet points */
+        }
+
+        .navbar ul li {
+            margin-right: 20px; /* Add spacing between list items */
+        }
+
+        .nav-link {
+            color: #fff; /* White text */
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background-color: #f0f0f0; /* Light gray hover */
+            color: #333; /* Dark gray text on hover */
+        }
+
+        .dropdown-menu {
+            background-color: darkblue; /* Dark blue dropdown background */
+            border: none; /* Remove dropdown border */
+            border-radius: 0; /* Remove dropdown border radius */
+            margin-top: 0; /* Remove margin */
+        }
+
+        .dropdown-menu .dropdown-item {
+            color: #fff; /* White text */
+            transition: background-color 0.3s ease;
+        }
+
+        .dropdown-menu .dropdown-item:hover {
+            background-color: white; /* White hover */
+            color: black; /* Black text on hover */
+        }
+
+        .dropdown-divider {
+            border-top-color: #5cb85c; /* Green divider */
+        }
+
+        .btn {
+            background-color: #fff; /* White button */
+            color: #7FFF00; /* Green text */
+            border-color: #fff; /* White border */
+            padding: 10px 20px; /* Add padding to the button */
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px; /* Add border radius */
+            transition: background-color 0.3s ease; /* Add transition effect */
+        }
+
+        .btn:hover {
+            background-color: #f0f0f0; /* Light gray hover */
+        }
